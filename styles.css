@@ -41,6 +41,9 @@ footer{margin-top:20px;color:var(--muted);font-size:14px;text-align:center}
 .site-list{list-style:none;padding:0;margin:0}
 .site-list li{margin-bottom:10px}
 .site-list a.btn{display:flex;width:100%;justify-content:flex-start;padding:10px 14px;border-radius:10px}
+/* remove default underline on links and buttons */
+a, .btn, .site-list a { text-decoration: none !important; }
+a:hover, a:focus, .btn:hover, .btn:focus { text-decoration: none !important; }
 @media(min-width:720px){
   .hero h1{font-size:36px}
   .hero {align-items:flex-start}
