@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic Site with Link</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">MS</div>
+        <div>
+          <div class="brand-name">MotorsportsList</div>
+          <div class="brand-sub">Simple demo site</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Welcome to a cleaner example</h1>
+          <p>I've improved the layout, typography and colors. Use the button below to visit an external site — it opens in a new tab for safety.</p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="https://example.com" target="_blank" rel="noopener noreferrer">Visit Example.com</a>
+            <a class="btn btn-ghost" href="https://example.com" target="_blank" rel="noopener noreferrer">Open link</a>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="quick-card">
+            <strong>Quick Link</strong>
+            <small>Safe external link</small>
+          </div>
+        </aside>
+      </section>
+
+      <footer>&copy; <span id="year"></span> MotorsportsList — Built with a simple HTML template</footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
